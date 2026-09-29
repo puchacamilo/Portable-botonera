@@ -1,0 +1,33 @@
+/* Style */
+
+html {font-size: 62.5%;}
+
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	}
+h3 {text-align: center;}
+
+.boton_s {font-size: 76px;
+	text-decoration: none;
+	line-height: 78px; 
+	background-image: url('../img/boton_negro.jpg');
+	width: 200px;
+	height: 200px;
+	display: block;
+	background-size: cover;
+	margin: auto;
+}
+
+a:hover.boton_s {
+	cursor: pointer;
+	background-size: 91%;
+    background-position: center;
+	
+}
+
+a:active.boton_s {
+    background-size: 50%;
+	background-position: unset;
+	cursor: progress;
+}
