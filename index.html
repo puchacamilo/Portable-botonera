@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Portable Records</title>
+	<meta name="description" content="">
+	<meta name="author" content=""> 
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px">Portable Records</h1>
+			<h5>Version 1.0 - Julio 2013</h5>
+			<hr />
+		</div>
+		<div class="one-third column">
+			<h3>Que caracter!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto" src="sounds/caracter.mp3"></audio></a>
+			</p>
+		</div>
+		<div class="one-third column">
+			<h3>Zap!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/sap.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>A Caramba!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/acaramba.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>Astupido!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/astupido.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>Barrio Tschocolate</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/barriochocolate.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>Cuatico..</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/cuatico.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>En vol&aacute;..</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/envola.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>Puta Madre!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/uta_madre.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>UuuUuUuuu..</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/UuuUuUuuu.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>X Nada!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto" src="sounds/xnada.mp3"></audio></a>
+			</p>
+			
+		</div>
+		<div class="one-third column">
+			<h3>Xoxo!</h3>
+			<p>
+				<a class="boton_s" onclick="this.firstChild.play()"><audio preload="auto"src="sounds/xoxo.mp3"></audio></a>
+			</p>
+			
+		</div>
+		
+		
+		
+
+	</div><!-- container -->
+
+<!-- Le Scripts
+================================================== -->
+
+<script type="text/javascript">
+var yourAudio = document.getElementById('yourAudio'),
+    ctrl = document.getElementById('audioControl');
+
+ctrl.onclick = function () {
+
+    // Update the Button
+    var pause = ctrl.innerHTML === 'pause!';
+    ctrl.innerHTML = pause ? 'play!' : 'pause!';
+
+    // Update the Audio
+    var method = pause ? 'pause' : 'play';
+    yourAudio[method]();
+
+    // Prevent Default Action
+    return false;
+};
+</script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
